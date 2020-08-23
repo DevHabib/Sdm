@@ -1,0 +1,244 @@
+header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  top: 2rem;
+  // display: none;
+
+  @include tablet-landscape {
+    top: 0;
+    display: none;
+
+    .logo {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      a {
+        img {
+          width: 10rem !important;
+        }
+      }
+    }
+  }
+}
+
+.exo-menu {
+  margin-left: auto;
+  float: right;
+  list-style: none;
+  position: relative;
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $color-dark;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s linear, background 0.2s linear;
+      font-size: 1.8rem;
+
+      &:hover {
+        background-color: $color-orange;
+        color: $color-white;
+      }
+    }
+  }
+
+  .drop-down {
+    a {
+      &:hover {
+        &+ul {
+          @extend %block;
+        }
+      }
+    }
+
+    ul {
+      background-color: $color-orange;
+      left: 0px;
+      min-width: 230px;
+      display: none;
+
+      &:hover {
+        @extend %block;
+      }
+
+      li {
+        background-color: $color-orange;
+        @extend %block;
+
+        a {
+          color: #fff;
+          @extend %block;
+          padding: 20px 22px;
+          text-decoration: none;
+          background-color: $color-orange;
+          border-bottom: 1px dotted $color-orange;
+          transition: color 0.2s linear, background 0.2s linear;
+
+          @include tablet {
+            padding: 10px 15px;
+          }
+
+          &:hover {
+            background-color: $color-orange2;
+          }
+        }
+      }
+
+      .flyout-right {
+        position: relative;
+
+        ul {
+          position: absolute;
+          top: 0;
+          min-width: 230px;
+          display: none;
+          border-left: 1px solid $color-orange;
+
+          &:hover {
+            @extend %block;
+          }
+
+          li {
+            a {
+              color: #fff;
+              @extend %block;
+              padding: 20px 22px;
+              text-decoration: none;
+              background-color: $color-orange;
+              border-bottom: 1px dotted $color-orange2;
+              transition: color 0.2s linear, background 0.2s linear;
+
+              &:hover {
+                background-color: $color-orange2;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          ul {
+            @extend %block;
+            left: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .mega-drop-down {
+    a {
+      &:hover {
+        +.mega-menu {
+          @extend %block;
+        }
+      }
+    }
+
+    .mega-menu {
+      background-color: $color-orange;
+      left: 0;
+      right: 0;
+      padding: 15px;
+      display: none;
+      padding-top: 0;
+      min-height: 100%;
+
+      &:hover {
+        @extend %block;
+      }
+
+      ul {
+        list-style: square !important;
+
+        li {
+          @extend %block;
+
+          a {
+            color: $color-white;
+            @extend %block;
+            padding: 10px 5px;
+
+            &:hover {
+              background-color: $color-orange2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*responsive*/
+@media (min-width:767px) {
+  .exo-menu>li>a {
+    display: block;
+    padding: 10px 5px;
+  }
+
+  .mega-menu,
+  .flyout-mega-wrap,
+  .Images,
+  .Blog,
+  .flyout-right>ul,
+  .flyout-left>ul,
+  li.drop-down>ul {
+    position: absolute;
+  }
+
+  .flyout-right>ul {
+    left: 100%;
+  }
+
+  .flyout-left>ul {
+    right: 100%;
+  }
+}
+
+@media (max-width:767px) {
+
+  .exo-menu {
+    min-height: 58px;
+    background-color: #23364B;
+    width: 100%;
+  }
+
+  .exo-menu>li>a {
+    width: 100%;
+    display: none;
+
+  }
+
+  .exo-menu>li {
+    width: 100%;
+  }
+
+  .display.exo-menu>li>a {
+    display: block;
+    padding: 20px 22px;
+  }
+
+  .mega-menu,
+  .Images,
+  .Blog,
+  .flyout-right>ul,
+  .flyout-left>ul,
+  li.drop-down>ul {
+    position: relative;
+  }
+
+}
+
+a.toggle-menu {
+  position: absolute;
+  right: 0px;
+  padding: 20px;
+  font-size: 27px;
+  background-color: #ccc;
+  color: #23364B;
+  top: 0px;
+}
