@@ -106,6 +106,10 @@
         font-weight: $bold;
         font-family: 'Poppins';
         text-transform: uppercase;
+
+        @include tablet {
+          font-size: 9rem;
+        }
       }
     }
 
@@ -133,6 +137,10 @@
       padding-top: 3.5rem;
       padding-left: 10%;
       padding-right: 5%;
+
+      @include tablet-landscape {
+        margin-bottom: 4rem;
+      }
 
       &-content {
         display: flex;
@@ -181,6 +189,10 @@
 
     &-content {
       padding: 0 1rem;
+
+      @include tablet-landscape {
+        margin-bottom: 4rem;
+      }
 
       &-item {
         margin-top: 3rem;
@@ -295,9 +307,19 @@
     &-ig {
       margin-top: 1rem;
 
+      @include tablet-landscape {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+      }
+
       &-img {
         width: 10rem;
         margin: 2.5rem 0;
+
+        @include tablet-landscape {
+          margin: 0;
+        }
       }
     }
 
@@ -365,6 +387,16 @@
           }
         }
       }
+
+      &-bottom {
+        @include tablet-landscape {
+          width: 80%;
+        }
+
+        @include tablet {
+          width: 45%;
+        }
+      }
     }
   }
 
@@ -374,6 +406,10 @@
 
     &-content {
       display: flex;
+
+      @include tablet {
+        padding: 2rem 0;
+      }
 
       &-left {
         img {
@@ -389,7 +425,18 @@
           font-weight: $bold;
           font-size: 1.4rem;
           line-height: 1.4rem;
+
+          @include tablet-landscape {
+            line-height: 2.5rem;
+            font-size: 1.7rem;
+          }
         }
+      }
+    }
+
+    &-payment {
+      @include tablet {
+        margin: 4rem 0;
       }
     }
   }
