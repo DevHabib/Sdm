@@ -110,6 +110,10 @@
         @include tablet {
           font-size: 9rem;
         }
+
+        @include mobile {
+          font-size: 7rem;
+        }
       }
     }
 
@@ -635,9 +639,31 @@
 
       .logo {
         margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
 
-        img {
-          width: 10.5rem;
+        &-img {
+          width: 33%;
+
+          img {
+            height: 12rem;
+            object-fit: contain;
+          }
+        }
+
+        &-text {
+          width: 66%;
+          text-align: left;
+
+          h2 {
+            font-size: 7rem;
+            font-family: 'Poppins';
+            text-transform: uppercase;
+            font-weight: $bold;
+            color: $dark-blue;
+            line-height: 5rem;
+            letter-spacing: 2px;
+          }
         }
       }
 

@@ -1,10 +1,10 @@
 @import 'variable', 'fonts', 'mixin', 'common', 'header', 'footer';
 
-.privacy {
+.brand {
   position: relative;
   height: 90vh;
   width: 100%;
-  background-image: url('../Images/privacy/bg.jpg');
+  background-image: url('../Images/brand-details/bg.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -60,6 +60,10 @@
           font-size: 5rem;
           font-weight: $regular;
           letter-spacing: .3rem;
+
+          @include mobile {
+            font-size: 4rem;
+          }
         }
       }
 
@@ -109,6 +113,100 @@
             &:last-child {
               margin-left: 1rem;
               font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-gallery {
+    padding-bottom: 5rem;
+    background-color: darken($color: $color-white, $amount: 5);
+
+    &-title {
+      padding: 3.5rem 5rem;
+
+      h4 {
+        text-transform: uppercase;
+        font-weight: $regular;
+        color: $dark-blue;
+        margin-bottom: 0;
+        font-size: 2rem;
+        font-family: 'Poppins';
+      }
+    }
+
+    &-img {
+      position: relative;
+      padding-right: 1px;
+      padding-bottom: 1px;
+
+      a {
+        display: block;
+
+        &::before {
+          @extend %before-after;
+          background-color: $color-orange;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: .3s;
+          top: 0;
+          left: 0;
+        }
+
+        &:hover {
+          &::before {
+            opacity: .7;
+          }
+        }
+      }
+
+      .view-more {
+        position: absolute;
+        background-color: $color-white;
+        padding: 1rem 3rem;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        transition: .3s;
+
+        &:hover {
+          box-shadow: 15px 34px 64px -2px rgba(171, 171, 171, 1);
+        }
+
+        &::before {
+          background-color: none;
+        }
+
+        a {
+          font-size: 2rem;
+          text-transform: uppercase;
+          font-weight: $light;
+          color: $dark-blue;
+          display: flex;
+          align-items: center;
+
+          span {
+            width: 70%;
+            line-height: 2.2rem;
+          }
+
+          i {
+            width: 50%;
+            font-size: 4rem;
+            margin-left: 2rem;
+          }
+
+          &:hover {
+            text-decoration: none;
+
+            &::before {
+              background-color: transparent;
             }
           }
         }
