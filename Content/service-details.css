@@ -944,8 +944,25 @@ a.toggle-menu {
     transform: translateY(-10px);
   }
 }
+@keyframes bounce-reverse {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
 .service-details-top {
   position: relative;
+  padding-bottom: 0;
+}
+@media (max-width: 768px) {
+  .service-details-top {
+    padding-bottom: 10rem;
+  }
 }
 .service-details-top-img {
   position: relative;
@@ -955,22 +972,48 @@ a.toggle-menu {
   width: 100%;
   height: 1133px;
 }
+@media (max-width: 768px) {
+  .service-details-top-img {
+    height: 856px;
+  }
+}
 .service-details-top-img-text {
   position: absolute;
   right: -30%;
-  top: 0;
+  top: 5%;
   animation: bounce 3s infinite;
+}
+@media (max-width: 768px) {
+  .service-details-top-img-text {
+    right: 0;
+  }
 }
 .service-details-top-img-text img {
   height: 485px;
   object-fit: contain;
 }
+@media (max-width: 992px) {
+  .service-details-top-img-text img {
+    height: 410px;
+  }
+}
+@media (max-width: 768px) {
+  .service-details-top-img-text img {
+    width: 494px;
+    height: 359px;
+  }
+}
 .service-details-top-img-logo {
   position: absolute;
-  bottom: 30%;
+  bottom: 35%;
   transform: translateX(-50%);
   left: 50%;
-  animation: bounce 3s infinite ease-in;
+  animation: bounce-reverse 3s infinite;
+}
+@media (max-width: 768px) {
+  .service-details-top-img-logo {
+    bottom: 25%;
+  }
 }
 .service-details-top-img-details {
   position: relative;
@@ -983,6 +1026,12 @@ a.toggle-menu {
   width: max-content;
   bottom: 25%;
 }
+@media (max-width: 768px) {
+  .service-details-top-img-details .right {
+    left: 70%;
+    bottom: 0;
+  }
+}
 .service-details-top-img-details .right h1 {
   font-family: "Poppins";
   font-size: 16rem;
@@ -994,6 +1043,107 @@ a.toggle-menu {
   color: #161b3c;
   font-size: 1.6rem;
   font-weight: 600;
+}
+.service-details-top-img-details .left {
+  position: absolute;
+  left: 20%;
+  z-index: 222;
+  width: max-content;
+  bottom: 7%;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .service-details-top-img-details .left {
+    left: 15%;
+    bottom: -7%;
+  }
+}
+.service-details-top-img-details .left h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3rem;
+}
+.service-details-top-img-details .left p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.service-details-title {
+  padding: 5rem;
+  text-align: center;
+}
+.service-details-title h3 {
+  color: #161b3c;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 3.36rem;
+  font-size: 2.8rem;
+  margin: 1rem 0;
+}
+.service-details-title p {
+  color: #4e565d;
+  font-size: 1.3rem;
+  letter-spacing: 0.7rem;
+  text-transform: uppercase;
+}
+.service-details-team {
+  padding: 5rem 0;
+  background-image: url("../Images/service-details/team-bg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.service-details-team-img {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.service-details-team-img-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 35, 238, 0.62);
+  opacity: 0;
+  transition: 0.3s;
+}
+.service-details-team-img-hover i {
+  transition: 0.3s;
+  opacity: 0;
+  font-size: 10rem;
+  color: #cccccc;
+}
+.service-details-team-img:hover .service-details-team-img-hover {
+  opacity: 1;
+}
+.service-details-team-img:hover .service-details-team-img-hover i {
+  opacity: 1;
+}
+.service-details-team-content {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.service-details-team-content h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.92rem;
+  font-family: "Poppins";
+}
+.service-details-team-content p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
 }
 
 /*# sourceMappingURL=service-details.css.map */
