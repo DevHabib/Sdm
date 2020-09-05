@@ -964,6 +964,11 @@ a.toggle-menu {
     padding-bottom: 10rem;
   }
 }
+@media (max-width: 576px) {
+  .service-details-top {
+    display: none;
+  }
+}
 .service-details-top-img {
   position: relative;
   background-image: url("../Images/service-details/service-details-bg.png");
@@ -1101,6 +1106,11 @@ a.toggle-menu {
   border-radius: 50%;
   overflow: hidden;
 }
+@media (max-width: 576px) {
+  .service-details-team-img {
+    border-radius: 20%;
+  }
+}
 .service-details-team-img-hover {
   width: 100%;
   height: 100%;
@@ -1139,11 +1149,21 @@ a.toggle-menu {
   line-height: 1.92rem;
   font-family: "Poppins";
 }
+@media (max-width: 576px) {
+  .service-details-team-content h4 {
+    font-size: 1.8rem;
+  }
+}
 .service-details-team-content p {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.1rem;
+}
+@media (max-width: 576px) {
+  .service-details-team-content p {
+    font-size: 1.4rem;
+  }
 }
 
 /*# sourceMappingURL=service-details.css.map */
