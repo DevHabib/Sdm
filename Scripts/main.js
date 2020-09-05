@@ -14,3 +14,5 @@
 
 	// });
 }(jQuery));
+
+var rellax = new Rellax('.rellax');
