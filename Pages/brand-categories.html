@@ -6,293 +6,774 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Brand Categories</title>
   <link rel="stylesheet" href="../Content/all.min.css" />
-  <link rel="stylesheet" href="../Content/animate.min.css">
+  <link rel="stylesheet" href="../Content/animate.min.css" />
   <link rel="stylesheet" href="../Content/bootstrap.min.css" />
   <link rel="stylesheet" href="../Content/lightbox.min.css" />
-  <link rel="stylesheet" href="../Content/brand-details.css">
+  <link rel="stylesheet" href="../Content/datepicker.min.css" />
+  <link rel="stylesheet" href="../Content/brand-categories.css">
 </head>
 
 <body>
   <!-- header -->
-  <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-1">
-          <div class="logo">
-            <a href="#">
-              <img src="../Images/logo.png" alt="">
-            </a>
+  <div class="header-top">
+    <div class="row no-gutters h-100 align-items-center">
+      <div class="col-lg">
+        <div class="input-group">
+          <input class="form-control" placeholder="mm/dd/yyyy" data-toggle="datepicker">
+          <div class="input-group-append">
+            <span class="input-group-text">
+              <i class="fas fa-calendar"></i>
+            </span>
           </div>
         </div>
-        <div class="col-md-11">
-          <ul class="exo-menu">
-            <li>
-              <a class="active" href="#">Home</a>
-            </li>
-            <li class="drop-down">
-              <a href="#"> Flyout <i class="fas fa-arrow-down"></i></a>
-              <!--Drop Down-->
-              <ul class="drop-down-ul animated fadeIn">
-                <li class="flyout-right">
-                  <a href="#">Flyout Right <i class="fa fa-arrow-right"></i></a>
-                  <!--Flyout Right-->
-                  <ul class="animated fadeIn">
-                    <li>
-                      <a href="#">Mobile</a>
-                    </li>
-                    <li>
-                      <a href="#">Computer</a>
-                    </li>
-                    <li>
-                      <a href="#">Watch</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="flyout-right">
-                  <a href="#">Flyout Right 2</a>
-                  <!--Flyout Right-->
-                  <ul class="animated fadeIn">
-                    <li>
-                      <a href="#">Mobile</a>
-                    </li>
-                    <li>
-                      <a href="#">Computer</a>
-                    </li>
-                    <li>
-                      <a href="#">Watch</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">No Flyout</a>
-                </li>
-              </ul>
-              <!--//End drop down-->
-            </li>
-            <li>
-              <a href="#"> Services</a>
-            </li>
-            <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li class="mega-drop-down">
-              <a href="#">Mega Menu <i class="fas fa-arrow-down"></i></a>
-              <div class="animated fadeIn mega-menu">
-                <div class="mega-menu-wrap">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <ul class="standerd">
-                        <li>
-                          <a href="#">Mobile</a>
-                        </li>
-                        <li>
-                          <a href="#">Computer</a>
-                        </li>
-                        <li>
-                          <a href="#">Watch</a>
-                        </li>
-                        <li>
-                          <a href="#">laptop</a>
-                        </li>
-                        <li>
-                          <a href="#">Camera</a>
-                        </li>
-                        <li>
-                          <a href="#">I pad</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <ul class="standerd">
-                        <li>
-                          <a href="#">Mobile</a>
-                        </li>
-                        <li>
-                          <a href="#">Computer</a>
-                        </li>
-                        <li>
-                          <a href="#">Watch</a>
-                        </li>
-                        <li>
-                          <a href="#">laptop</a>
-                        </li>
-                        <li>
-                          <a href="#">Camera</a>
-                        </li>
-                        <li>
-                          <a href="#">I pad</a>
-                        </li>
+      </div>
+      <div class="col-lg">
+        <div class="input-group">
+          <input type="text" class="form-control" data-toggle="datepicker">
+          <div class="input-group-append">
+            <span class="input-group-text">
+              <i class="fas fa-calendar"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="input-group">
+          <select class="form-control">
+            <option selected>Adult</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <div class="input-group-append">
+            <span class="input-group-text">
+              <i class="fas fa-users"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="input-group">
+          <select class="form-control">
+            <option selected>Children</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <div class="input-group-append">
+            <span class="input-group-text">
+              <i class="fas fa-users"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <button class="header-btn">Check Availability</button>
+      </div>
+    </div>
+  </div>
 
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <ul class="standerd">
-                        <li>
-                          <a href="#">Mobile</a>
-                        </li>
-                        <li>
-                          <a href="#">Computer</a>
-                        </li>
-                        <li>
-                          <a href="#">Watch</a>
-                        </li>
-                        <li>
-                          <a href="#">laptop</a>
-                        </li>
-                        <li>
-                          <a href="#">Camera</a>
-                        </li>
-                        <li>
-                          <a href="#">I pad</a>
-                        </li>
+  <!-- Porsche Header -->
+  <header class="main-header">
+    <div class="grid">
+      <div class="content-full-width">
+        <div class="mega-container">
+          <!-- logo -->
+          <div class="logo-wrapper"> <a href="#" class="logo-container logo"></a> </div>
+          <!-- /logo -->
+          <!-- menu -->
+          <div class="menu-items-wrapper">
+            <div class="menu-items-inner-wrapper">
 
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <ul class="standerd">
-                        <li>
-                          <a href="#">Mobile</a>
-                        </li>
-                        <li>
-                          <a href="#">Computer</a>
-                        </li>
-                        <li>
-                          <a href="#">Watch</a>
-                        </li>
-                        <li>
-                          <a href="#">laptop</a>
-                        </li>
-                        <li>
-                          <a href="#">Camera</a>
-                        </li>
-                        <li>
-                          <a href="#">I pad</a>
-                        </li>
+              <!-- Single Menu -->
+              <div class="menu-item">
+                <a href="#" class="menu-text">Models</a>
+                <div class="menu-models">
+                  <div class="navigation-model">
+                    <div class="menu-item-second-level">
+                      <a href="#" class="text">
+                        <span class="desktop">718</span>
+                        <div class="link-image">
+                          <img src="../Images/header/porsche-thumbnail.png" alt="">
+                        </div>
+                      </a>
+                      <div class="navigation">
+                        <div class="navigation-menu">
+                          <div class="menu-item-third-level">
+                            <a data-model="2212" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Ceyman Models</span>
+                            </a>
+                          </div>
 
-                      </ul>
+                          <div class="menu-item-third-level">
+                            <a data-model="2213" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Box star Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2214" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 T Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2215" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 GTS 4.0 Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2216" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Ceyman GT4 Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Spyder</span>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="tech-data-container">
+                        <div data-id="2212" class="tech-data active">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal.jpg" alt="">
+                          </div>
+                          <div class="tech-data-items-wrapper">
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">300 hp</div>
+                              <div class="tech-data-items-key">Max. power</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">4.9 s</div>
+                              <div class="tech-data-items-key">0 - 60 mph</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">170 mph</div>
+                              <div class="tech-data-items-key">Top track speed</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">From $ 59,900.00*</div>
+                              <div class="tech-data-items-key">MSRP</div>
+                            </div>
+
+                            <div class="tech-data-items-links">
+                              <a href="#" class="button-outline"><span>Build &
+                                  Price</span></a>
+                              <a href="#" class="button-outline"><span>Compare</span></a>
+                              <a href="#" class="button-red"><span>Explore</span></a>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div data-id="2213" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
+                          <div class="tech-data-items-wrapper">
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">300 hp</div>
+                              <div class="tech-data-items-key">Max. power</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">4.9 s</div>
+                              <div class="tech-data-items-key">0 - 60 mph</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">170 mph</div>
+                              <div class="tech-data-items-key">Top track speed</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">From $ 59,900.00*</div>
+                              <div class="tech-data-items-key">MSRP</div>
+                            </div>
+
+                            <div class="tech-data-items-links">
+                              <a href="#" class="button-outline"><span>Build &
+                                  Price</span></a>
+                              <a href="#" class="button-outline"><span>Compare</span></a>
+                              <a href="#" class="button-red"><span>Explore</span></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div data-id="2214" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal.jpg" alt="">
+                          </div>
+                          <div class="tech-data-items-wrapper">
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">300 hp</div>
+                              <div class="tech-data-items-key">Max. power</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">4.9 s</div>
+                              <div class="tech-data-items-key">0 - 60 mph</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">170 mph</div>
+                              <div class="tech-data-items-key">Top track speed</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">From $ 59,900.00*</div>
+                              <div class="tech-data-items-key">MSRP</div>
+                            </div>
+
+                            <div class="tech-data-items-links">
+                              <a href="#" class="button-outline"><span>Build &
+                                  Price</span></a>
+                              <a href="#" class="button-outline"><span>Compare</span></a>
+                              <a href="#" class="button-red"><span>Explore</span></a>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div data-id="2215" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
+                          <div class="tech-data-items-wrapper">
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">300 hp</div>
+                              <div class="tech-data-items-key">Max. power</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">4.9 s</div>
+                              <div class="tech-data-items-key">0 - 60 mph</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">170 mph</div>
+                              <div class="tech-data-items-key">Top track speed</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">From $ 59,900.00*</div>
+                              <div class="tech-data-items-key">MSRP</div>
+                            </div>
+
+                            <div class="tech-data-items-links">
+                              <a href="#" class="button-outline"><span>Build &
+                                  Price</span></a>
+                              <a href="#" class="button-outline"><span>Compare</span></a>
+                              <a href="#" class="button-red"><span>Explore</span></a>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div data-id="2216" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal.jpg" alt="">
+                          </div>
+                          <div class="tech-data-items-wrapper">
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">300 hp</div>
+                              <div class="tech-data-items-key">Max. power</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">4.9 s</div>
+                              <div class="tech-data-items-key">0 - 60 mph</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">170 mph</div>
+                              <div class="tech-data-items-key">Top track speed</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">From $ 59,900.00*</div>
+                              <div class="tech-data-items-key">MSRP</div>
+                            </div>
+
+                            <div class="tech-data-items-links">
+                              <a href="#" class="button-outline"><span>Build &
+                                  Price</span></a>
+                              <a href="#" class="button-outline"><span>Compare</span></a>
+                              <a href="#" class="button-red"><span>Explore</span></a>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div data-id="2217" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
+                          <div class="tech-data-items-wrapper">
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">300 hp</div>
+                              <div class="tech-data-items-key">Max. power</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">4.9 s</div>
+                              <div class="tech-data-items-key">0 - 60 mph</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">170 mph</div>
+                              <div class="tech-data-items-key">Top track speed</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">From $ 59,900.00*</div>
+                              <div class="tech-data-items-key">MSRP</div>
+                            </div>
+
+                            <div class="tech-data-items-links">
+                              <a href="#" class="button-outline"><span>Build &
+                                  Price</span></a>
+                              <a href="#" class="button-outline"><span>Compare</span></a>
+                              <a href="#" class="button-red"><span>Explore</span></a>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                    <!-- second -->
+                    <div class="menu-item-second-level">
+                      <a href="#" class="text">
+                        <span class="desktop">918</span>
+                        <div class="link-image">
+                          <img src="../Images/header/porsche-thumbnail.png" alt="">
+                        </div>
+                      </a>
+                      <div class="navigation">
+                        <div class="navigation-menu">
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 Ceyman Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 Box star Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 T Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 GTS 4.0 Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 Ceyman GT4 Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 Spyder</span>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="tech-data-container">
+                        <div data-id="2217" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
+                          <div class="tech-data-items-wrapper">
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">300 hp</div>
+                              <div class="tech-data-items-key">Max. power</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">4.9 s</div>
+                              <div class="tech-data-items-key">0 - 60 mph</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">170 mph</div>
+                              <div class="tech-data-items-key">Top track speed</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">From $ 59,900.00*</div>
+                              <div class="tech-data-items-key">MSRP</div>
+                            </div>
+
+                            <div class="tech-data-items-links">
+                              <a href="#" class="button-outline"><span>Build &
+                                  Price</span></a>
+                              <a href="#" class="button-outline"><span>Compare</span></a>
+                              <a href="#" class="button-red"><span>Explore</span></a>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /second -->
+
+                    <!-- second -->
+                    <div class="menu-item-second-level">
+                      <a href="#" class="text">
+                        <span class="desktop">918</span>
+                        <div class="link-image">
+                          <img src="../Images/header/porsche-thumbnail.png" alt="">
+                        </div>
+                      </a>
+                      <div class="navigation">
+                        <div class="navigation-menu">
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 Ceyman Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 Box star Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 T Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 GTS 4.0 Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 Ceyman GT4 Models</span>
+                            </a>
+                          </div>
+
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">918 Spyder</span>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="tech-data-container">
+                        <div data-id="2217" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
+                          <div class="tech-data-items-wrapper">
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">300 hp</div>
+                              <div class="tech-data-items-key">Max. power</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">4.9 s</div>
+                              <div class="tech-data-items-key">0 - 60 mph</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">170 mph</div>
+                              <div class="tech-data-items-key">Top track speed</div>
+                            </div>
+
+                            <div class="tech-data-items">
+                              <div class="tech-data-items-value">From $ 59,900.00*</div>
+                              <div class="tech-data-items-key">MSRP</div>
+                            </div>
+
+                            <div class="tech-data-items-links">
+                              <a href="#" class="button-outline"><span>Build &
+                                  Price</span></a>
+                              <a href="#" class="button-outline"><span>Compare</span></a>
+                              <a href="#" class="button-red"><span>Explore</span></a>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /second -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Single Menu -->
+
+              <!-- Single Menu -->
+              <div class="menu-item has-no-third">
+                <a href="#" class="menu-text">Shopping Tools</a>
+                <div class="menu-models">
+                  <div class="navigation-model">
+                    <div class="menu-item-second-level">
+                      <a href="#" class="text">
+                        <span class="desktop">Build your Porsche</span>
+                      </a>
+                      <div class="tech-data-container no-third">
+                        <div data-id="2212" class="tech-data active">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- second -->
+                    <div class="menu-item-second-level">
+                      <a href="#" class="text">
+                        <span class="desktop">Search Inventory</span>
+                      </a>
+
+                    </div>
+                    <!-- /second -->
+
+                    <!-- second -->
+                    <div class="menu-item-second-level">
+                      <a href="#" class="text">
+                        <span class="desktop">Pre-owned Car Locator</span>
+                      </a>
+                    </div>
+                    <!-- /second -->
+                  </div>
+                </div>
+              </div>
+              <!-- /Single Menu -->
+
+              <!-- Single Menu -->
+              <div class="menu-item">
+                <a href="#" class="menu-text">Shop & Services</a>
+                <div class="menu-models">
+                  <div class="navigation-model">
+                    <div class="menu-item-second-level">
+                      <a href="#" class="text">
+                        <span class="desktop">718</span>
+                      </a>
+                      <div class="navigation">
+                        <div class="navigation-menu">
+                          <div class="menu-item-third-level">
+                            <a data-model="2212" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Ceyman Models</span>
+                            </a>
+                          </div>
+                          <div class="menu-item-third-level">
+                            <a data-model="2213" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Box star Models</span>
+                            </a>
+                          </div>
+                          <div class="menu-item-third-level">
+                            <a data-model="2214" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 T Models</span>
+                            </a>
+                          </div>
+                          <div class="menu-item-third-level">
+                            <a data-model="2215" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 GTS 4.0 Models</span>
+                            </a>
+                          </div>
+                          <div class="menu-item-third-level">
+                            <a data-model="2216" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Ceyman GT4 Models</span>
+                            </a>
+                          </div>
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Spyder</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tech-data-container">
+                        <div data-id="2212" class="tech-data active">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div data-id="2213" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal.jpg" alt="">
+                          </div>
+                        </div>
+                        <div data-id="2214" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal.jpg" alt="">
+                          </div>
+                        </div>
+                        <div data-id="2215" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div data-id="2216" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal.jpg" alt="">
+                          </div>
+                        </div>
+                        <div data-id="2217" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="mega-drop-down">
-              <a href="#">Mega Menu <i class="fas fa-arrow-down"></i></a>
-              <div class="animated fadeIn mega-menu">
-                <div class="mega-menu-wrap">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <ul class="standerd">
-                        <li>
-                          <a href="#">Mobile</a>
-                        </li>
-                        <li>
-                          <a href="#">Computer</a>
-                        </li>
-                        <li>
-                          <a href="#">Watch</a>
-                        </li>
-                        <li>
-                          <a href="#">laptop</a>
-                        </li>
-                        <li>
-                          <a href="#">Camera</a>
-                        </li>
-                        <li>
-                          <a href="#">I pad</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <ul class="standerd">
-                        <li>
-                          <a href="#">Mobile</a>
-                        </li>
-                        <li>
-                          <a href="#">Computer</a>
-                        </li>
-                        <li>
-                          <a href="#">Watch</a>
-                        </li>
-                        <li>
-                          <a href="#">laptop</a>
-                        </li>
-                        <li>
-                          <a href="#">Camera</a>
-                        </li>
-                        <li>
-                          <a href="#">I pad</a>
-                        </li>
+              <!-- /Single Menu -->
 
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <ul class="standerd">
-                        <li>
-                          <a href="#">Mobile</a>
-                        </li>
-                        <li>
-                          <a href="#">Computer</a>
-                        </li>
-                        <li>
-                          <a href="#">Watch</a>
-                        </li>
-                        <li>
-                          <a href="#">laptop</a>
-                        </li>
-                        <li>
-                          <a href="#">Camera</a>
-                        </li>
-                        <li>
-                          <a href="#">I pad</a>
-                        </li>
+              <!-- Single Menu -->
+              <div class="menu-item">
+                <a href="#" class="menu-text">Porsche World</a>
+                <div class="menu-models">
+                  <div class="navigation-model">
+                    <div class="menu-item-second-level">
+                      <a href="#" class="text">
+                        <span class="desktop">718</span>
+                      </a>
+                      <div class="navigation">
+                        <div class="navigation-menu">
+                          <div class="menu-item-third-level">
+                            <a data-model="2212" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Ceyman Models</span>
+                            </a>
+                          </div>
+                          <div class="menu-item-third-level">
+                            <a data-model="2213" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Box star Models</span>
+                            </a>
+                          </div>
+                          <div class="menu-item-third-level">
+                            <a data-model="2214" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 T Models</span>
+                            </a>
+                          </div>
+                          <div class="menu-item-third-level">
+                            <a data-model="2215" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 GTS 4.0 Models</span>
+                            </a>
+                          </div>
+                          <div class="menu-item-third-level">
+                            <a data-model="2216" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Ceyman GT4 Models</span>
+                            </a>
+                          </div>
+                          <div class="menu-item-third-level">
+                            <a data-model="2217" href="" class="menu-item-third-level-text">
+                              <span class="desktop">718 Spyder</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tech-data-container">
+                        <div data-id="2212" class="tech-data active">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal.jpg" alt="">
+                          </div>
+                        </div>
+                        <div data-id="2213" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div data-id="2214" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal.jpg" alt="">
+                          </div>
+                        </div>
+                        <div data-id="2215" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div data-id="2216" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal.jpg" alt="">
+                          </div>
+                        </div>
+                        <div data-id="2217" class="tech-data">
+                          <div class="background-container">
+                            <img src="../Images/header/porsche-normal1.jpg" alt="">
+                          </div>
 
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <ul class="standerd">
-                        <li>
-                          <a href="#">Mobile</a>
-                        </li>
-                        <li>
-                          <a href="#">Computer</a>
-                        </li>
-                        <li>
-                          <a href="#">Watch</a>
-                        </li>
-                        <li>
-                          <a href="#">laptop</a>
-                        </li>
-                        <li>
-                          <a href="#">Camera</a>
-                        </li>
-                        <li>
-                          <a href="#">I pad</a>
-                        </li>
+                        </div>
 
-                      </ul>
+                      </div>
+
                     </div>
+
+
                   </div>
                 </div>
               </div>
-            </li>
-            <li>
-              <a href="#"> Contact</a>
-            </li>
-            <a href="#" class="toggle-menu d-md-none d-sm-block">|||</a>
-          </ul>
+              <!-- /Single Menu -->
+            </div>
+          </div>
+          <!-- /menu -->
         </div>
       </div>
     </div>
   </header>
+  <!-- /Porsche Header -->
   <!-- /header -->
   <main>
     <!-- top background & breadcrumb -->
-    <section class="brand">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-lg-12">
-            <div class="brand-breadcrumb">
-              <h3>A Brand Details</h3>
+    <section class="brand-cat">
+      <div class="container-fluid h-100 p-0">
+        <div class="row no-gutters h-100 align-items-center">
+          <div class=" col-lg-2">
+            <div class="brand-cat-img">
+              <img src="../Images/service-bg-left.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="brand-cat-content">
+              <h1>Category</h1>
+              <h3><b>Brand </b>Category</h3>
+              <p>GET EXCLUSIVE SERVICES AT AFFORDABLE RATES</p>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="brand-cat-img">
+              <img src="../Images/service-bg-right.png" alt="">
             </div>
           </div>
         </div>
@@ -300,127 +781,73 @@
     </section>
     <!-- /top background & breadcrumb -->
 
-    <!-- brand details -->
-    <section class="brand-content">
+    <!-- divider -->
+    <section class="divider">
+      <div class="row no-gutters">
+        <div class="col-12">
+          <div class="d-flex align-items-center">
+            <div class="line"></div>
+            <div class="icon">
+              <i class="fas fa-cut"></i>
+            </div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /divider -->
+
+    <!-- part 2 -->
+    <section class="brand-cat-2">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="brand-content-img">
-              <img src="../Images/brand-details/side.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="brand-content-center">
-              <div class="title">
-                <h1>I'm Frank</h1>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="brand-cat-2-logo">
+                  <img src="../Images/brand-categories/logo-2.png" alt="">
+                </div>
               </div>
-              <div class="des">
-                <p>Photography to me is catching a movement which is passing and which is true</p>
-              </div>
-              <div class="bottom">
-                <p>
-                  <i>Cras non ultrices ex. Curabitur vitae viverra erat it dignissim mauris metus</i>
-                </p>
+              <div class="col-lg-8">
+                <div class="brand-cat-2-left">
+                  <h2 class="title">Exclusive<br>Treatment</h2>
+                  <p class="des">LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY. LOREM IPSUM
+                    HAS BEEN THE INDUSTRY'S STANDARD DUMMY TEXT EVER SINCE THE 1500S, WHEN AN
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="brand-content-right">
-              <div class="des">
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                  Duis
-                  sed odio sit amet nibh vulputate cursus a sit amet mauris.Morbi accumsan ipsum velit. </p>
-                <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu
-                  in
-                  elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>
-              </div>
-              <div class="bottom">
-                <p><i class="fas fa-camera"></i> <i>Robert Frank</i></p>
-              </div>
+          <div class="col-lg-4 offset-lg-2">
+            <div class="brand-cat-2-right">
+              <p class="top">SINCE</p>
+              <h2 class="center">1983</h2>
+              <p class="bottom">LOREM IPSUM IS SIMPLY DUMMY <br>
+                TEXT OF THE</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- /brand detais -->
+    <!-- /part 2 -->
 
-    <!-- brand gallery -->
-    <section class="brand-gallery">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="col-md-12">
-            <div class="brand-gallery-title">
-              <h4>My Work, My passion....<b>My works</b></h4>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row no-gutters">
-              <div class="col-md-12">
-                <div class="brand-gallery-img">
-                  <a href="../Images/brand-details/gallery-l1.jpg" data-lightbox="image" data-title="Image One">
-                    <img src="../Images/brand-details/gallery-l1.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="brand-gallery-img">
-                  <a href="../Images/brand-details/gallery-l2.jpg" data-lightbox="image" data-title="Image Two">
-                    <img src="../Images/brand-details/gallery-l2.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="brand-gallery-img">
-                  <a href="../Images/brand-details/gallery-l3.jpg" data-lightbox="image" data-title="Image Three">
-                    <img src="../Images/brand-details/gallery-l3.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="brand-gallery-img">
-                  <a href="../Images/brand-details/gallery-l4.jpg" data-lightbox="image" data-title="Image Three">
-                    <img src="../Images/brand-details/gallery-l4.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="brand-gallery-img">
-                  <a href="../Images/brand-details/gallery-l3.jpg" data-lightbox="image" data-title="Image Three">
-                    <img src="../Images/brand-details/gallery-l3.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row no-gutters">
-              <div class="col-md-12">
-                <div class="brand-gallery-img">
-                  <a href="../Images/brand-details/gallery-r1.jpg" data-lightbox="image" data-title="Image Three">
-                    <img src="../Images/brand-details/gallery-r1.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="brand-gallery-img">
-                  <a href="../Images/brand-details/gallery-r2.jpg" data-lightbox="image" data-title="Image Three">
-                    <img src="../Images/brand-details/gallery-r2.jpg" alt="">
-                  </a>
-                  <div class="view-more">
-                    <a href="#">
-                      <span>View <br> My All <br> Works</span>
-                      <i class="fas fa-long-arrow-alt-right"></i>
-                    </a>
-                  </div>
-                </div>
+    <!-- brand banner -->
+    <section class="brand-cat-banner">
+      <!-- <div class="background-img">
+        <div class="container">
+          <div class="row">
+            <div class="offset-lg-8 col-lg-4">
+              <div class="brand-cat-banner-content rellax" data-rellax-speed="3">
+                <h2><b>STUDIO</b> <span>SALON</span></h2>
+                <p>LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE </p>
+                <p>PRINTING AND </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
-    <!-- /brand gallery -->
+    <!-- /brand banner -->
   </main>
   <!-- footer -->
   <footer class="footer">
@@ -1050,9 +1477,12 @@
   <!-- footer -->
   <script src="../Scripts/jquery.min.js"></script>
   <script src="../Scripts/bootstrap.bundle.min.js"></script>
+  <script src="../Scripts/datepicker.min.js"></script>
   <script src="../Scripts/wow.min.js"></script>
   <script src="../Scripts/lightbox.min.js"></script>
+  <script src="../Scripts/rellax.min.js"></script>
   <script src="../Scripts/main.js"></script>
+  <script src="../Scripts/menu.js"></script>
 </body>
 
 </html>

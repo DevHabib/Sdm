@@ -9,10 +9,13 @@
 		})
 	});
 
+
 	// jQuery loading function starts          
 	// jQuery(window).load(function () {
 
 	// });
+	$('[data-toggle="datepicker"]').datepicker();
 }(jQuery));
+
 
 var rellax = new Rellax('.rellax');

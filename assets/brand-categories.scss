@@ -1,0 +1,175 @@
+@import 'variable', 'fonts', 'mixin', 'common', 'header', 'footer';
+
+.divider {
+  padding: 5rem 0;
+
+  .line {
+    background-color: lighten($color: $color-dark, $amount: 50);
+    height: .1rem;
+    width: 100%;
+  }
+
+  .icon {
+    padding: 0 1rem;
+
+    i {
+      font-size: 3.99rem;
+      color: $dark-blue;
+    }
+  }
+}
+
+.brand-cat {
+  position: relative;
+  height: 100vh;
+  margin-bottom: 10rem;
+
+  &-img {
+    @include tablet-landscape {
+      display: none;
+    }
+  }
+
+  &-content {
+    text-align: center;
+
+    @include tablet-landscape {
+      text-align: left;
+      padding: 0 3rem;
+    }
+
+    @include tablet {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 19rem;
+      color: lighten($color: $color-dark, $amount: 50);
+      margin-bottom: 3rem;
+      font-weight: $light;
+
+      @include tablet-landscape {
+        font-size: 15rem;
+      }
+
+      @include mobile {
+        font-size: 10rem;
+      }
+    }
+
+    h3 {
+      font-size: 4rem;
+      color: $dark-blue;
+      font-weight: $regular;
+      margin-bottom: 2rem;
+
+      b {
+        font-weight: $bold;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: $color-dark;
+    }
+  }
+
+  &-2 {
+    @extend %section-padding;
+    background-color: darken($color: $color-white, $amount: 3);
+
+    &-left {
+      .title {
+        font-size: 3rem;
+        color: $dark-blue;
+        font-weight: $light;
+        letter-spacing: .6rem;
+        text-transform: uppercase;
+        line-height: 3.6rem;
+        padding: .5rem 0;
+      }
+
+      .des {
+        color: $color-dark;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        padding: .5rem 0;
+        line-height: 2.21rem;
+      }
+    }
+
+    &-right {
+      .top {
+        font-size: 2rem;
+        color: $dark-blue;
+        letter-spacing: .6rem;
+        line-height: 1.2;
+      }
+
+      .center {
+        font-size: 13rem;
+        font-family: $primary-font;
+        color: $dark-blue;
+        line-height: 10.8rem;
+      }
+
+      .bottom {
+        line-height: 1.95rem;
+        color: lighten($color: $color-dark, $amount: 20);
+        font-size: 1.3rem;
+        letter-spacing: .2rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  &-banner {
+    width: 100%;
+    height: 80vh;
+    
+  }
+
+  // &-banner {
+  //   width: 100%;
+  //   position: relative;
+
+  //   .background-img {
+  //     background-image: url('../Images/brand-categories/bg-s.jpg');
+  //     background-size: cover;
+  //     background-position: center;
+  //     background-attachment: fixed;
+  //     height: 80vh;
+  //     width: 100%;
+  //     position: relative;
+  //   }
+
+  //   &-content {
+  //     position: relative;
+
+  //     h2 {
+  //       color: $color-white;
+  //       font-size: 4rem;
+  //       line-height: 4.8rem;
+  //       margin-bottom: 2.5rem;
+
+  //       span {
+  //         font-weight: $light;
+  //       }
+
+  //       b {
+  //         font-weight: $bold;
+  //       }
+  //     }
+
+  //     p {
+  //       font-weight: $light;
+  //       letter-spacing: .2rem;
+  //       color: $color-white;
+  //       font-size: 1.3rem;
+  //       margin-bottom: 0;
+  //       line-height: 1.57rem;
+  //     }
+  //   }
+  // }
+}

@@ -1,5 +1,27 @@
 @import 'variable', 'fonts', 'mixin', 'common', 'header', 'footer';
 
+.bg-white {
+  position: relative;
+
+  &::before {
+    @extend %before-after;
+    background-color: $color-white;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+  }
+
+  &::after {
+    @extend %before-after;
+    background-color: $color-white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-84%);
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .about {
   &-banner {
     position: relative;
@@ -82,14 +104,19 @@
     }
   }
 
+  .right {
+    background-color: $color-white;
+  }
+
   &-second {
     background-color: #F1F2F4;
-    padding: 3rem 0;
+    overflow: hidden;
 
     &-top {
       display: flex;
       align-items: center;
       height: 100%;
+      padding: 3rem 0;
 
       img {
         width: 34.7rem;
@@ -103,6 +130,274 @@
         font-weight: $regular;
         text-transform: uppercase;
         margin-bottom: 0;
+      }
+    }
+
+    &-content {
+      position: relative;
+      z-index: 99;
+
+      &-left {
+        position: relative;
+
+        img {
+          width: 100%;
+          box-shadow: #000000 0px 0px 191px -30px;
+          height: 50.21rem;
+          object-fit: cover;
+        }
+
+        &-item {
+          position: absolute;
+          top: 50%;
+          left: 75%;
+          transform: translateY(-50%);
+
+          h1 {
+            text-transform: capitalize;
+            font-weight: $bold;
+            color: $dark-blue;
+            font-size: 7rem;
+            line-height: 8.4rem;
+            font-family: 'Poppins';
+          }
+
+          p {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      .view {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 100%;
+        left: 50%;
+        width: max-content;
+
+        a {
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          .center {
+            background-color: #ff2f4c;
+            width: 10.4rem;
+            height: 10.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3.4rem;
+
+            i {
+              color: $dark-blue;
+              line-height: 4.68rem;
+              font-size: 2.6rem;
+            }
+          }
+
+          .right {
+            margin-left: 1rem;
+            text-align: center;
+            position: relative;
+            top: -1rem;
+
+            span {
+              color: $dark-blue;
+              text-transform: uppercase;
+              font-size: 1.5rem;
+              font-weight: $bold;
+            }
+          }
+        }
+      }
+
+      .quotes {
+        margin-top: 15rem;
+
+        .top {
+          display: flex;
+          justify-content: flex-end;
+
+          .title {
+            text-align: right;
+            width: 32%;
+            margin-left: auto;
+            margin-right: 1rem;
+
+            h2 {
+              font-size: 1.8rem;
+              text-transform: uppercase;
+              word-break: break-all;
+              font-weight: $regular;
+              line-height: 2.16rem;
+              margin-top: 1.5rem;
+
+              b {
+                font-weight: $bold;
+              }
+            }
+          }
+
+          .quotes-img {
+            width: 3.4rem;
+            height: 3.4rem;
+
+            img {
+              object-fit: cover;
+              border-radius: 50%;
+            }
+          }
+        }
+
+      }
+
+      .des {
+        margin-top: 20rem;
+
+        p {
+          font-size: 1.4rem;
+          margin-bottom: 0;
+          line-height: 2.52rem;
+          color: $color-dark;
+        }
+      }
+    }
+
+    .left {
+      position: relative;
+      z-index: 99;
+
+      &-left {
+        position: relative;
+
+        img {
+          width: 100%;
+          box-shadow: #000000 0px 0px 191px -30px;
+          height: 50.21rem;
+          object-fit: cover;
+        }
+
+        &-item {
+          position: absolute;
+          top: 50%;
+          left: 75%;
+          transform: translateY(-50%);
+
+          h1 {
+            text-transform: capitalize;
+            font-weight: $bold;
+            color: $dark-blue;
+            font-size: 7rem;
+            line-height: 8.4rem;
+            font-family: 'Poppins';
+          }
+
+          p {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      .view {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 100%;
+        left: 50%;
+        width: max-content;
+
+        a {
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          .center {
+            background-color: #ff2f4c;
+            width: 10.4rem;
+            height: 10.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3.4rem;
+
+            i {
+              color: $dark-blue;
+              line-height: 4.68rem;
+              font-size: 2.6rem;
+            }
+          }
+
+          .right {
+            margin-left: 1rem;
+            text-align: center;
+            position: relative;
+            top: -1rem;
+
+            span {
+              color: $dark-blue;
+              text-transform: uppercase;
+              font-size: 1.5rem;
+              font-weight: $bold;
+            }
+          }
+        }
+      }
+
+      .quotes {
+        margin-top: 15rem;
+
+        .top {
+          display: flex;
+          justify-content: flex-end;
+
+          .title {
+            text-align: right;
+            width: 32%;
+            margin-left: auto;
+            margin-right: 1rem;
+
+            h2 {
+              font-size: 1.8rem;
+              text-transform: uppercase;
+              word-break: break-all;
+              font-weight: $regular;
+              line-height: 2.16rem;
+              margin-top: 1.5rem;
+
+              b {
+                font-weight: $bold;
+              }
+            }
+          }
+
+          .quotes-img {
+            width: 3.4rem;
+            height: 3.4rem;
+
+            img {
+              object-fit: cover;
+              border-radius: 50%;
+            }
+          }
+        }
+
+      }
+
+      .des {
+        margin-top: 20rem;
+
+        p {
+          font-size: 1.4rem;
+          margin-bottom: 0;
+          line-height: 2.52rem;
+          color: $color-dark;
+        }
       }
     }
   }
