@@ -37,7 +37,7 @@ img {
   content: "";
 }
 
-.brand-cat-2, .footer-p1 {
+.footer-p1 {
   padding: 10rem 0;
 }
 
@@ -541,6 +541,13 @@ a {
 
 .tech-data-container.no-third .background-container::after {
   left: 0 !important;
+}
+
+.datepicker-panel {
+  overflow: hidden;
+}
+.datepicker-panel ul {
+  background-color: #ff8427;
 }
 
 .footer {
@@ -1227,241 +1234,102 @@ a {
   }
 }
 
-.divider {
-  padding: 5rem 0;
-}
-.divider .line {
-  background-color: #d1d5d9;
-  height: 0.1rem;
-  width: 100%;
-}
-.divider .icon {
-  padding: 0 1rem;
-}
-.divider .icon i {
-  font-size: 3.99rem;
-  color: #161b3c;
+.wrapper {
+  width: 85%;
+  margin: auto;
 }
 
-.brand-cat {
-  position: relative;
-  height: 100vh;
-  margin-bottom: 10rem;
-}
-@media (max-width: 992px) {
-  .brand-cat-img {
-    display: none;
-  }
-}
-.brand-cat-content {
-  text-align: center;
-}
-@media (max-width: 992px) {
-  .brand-cat-content {
-    text-align: left;
-    padding: 0 3rem;
-  }
-}
-@media (max-width: 768px) {
-  .brand-cat-content {
-    text-align: center;
-  }
-}
-.brand-cat-content h1 {
-  font-size: 19rem;
-  color: #d1d5d9;
-  margin-bottom: 3rem;
-  font-weight: 300;
-}
-@media (max-width: 992px) {
-  .brand-cat-content h1 {
-    font-size: 15rem;
-  }
-}
-@media (max-width: 576px) {
-  .brand-cat-content h1 {
-    font-size: 10rem;
-  }
-}
-.brand-cat-content h3 {
-  font-size: 4rem;
-  color: #161b3c;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-.brand-cat-content h3 b {
-  font-weight: 600;
-}
-.brand-cat-content p {
-  font-size: 1.4rem;
-  color: #4e565d;
-}
-.brand-cat-2 {
-  background-color: #f7f7f7;
-}
-.brand-cat-2-logo {
-  height: 100%;
-}
-.brand-cat-2-logo img {
-  height: 100%;
-  object-fit: contain;
-}
-.brand-cat-2-left .title {
-  font-size: 3rem;
-  color: #161b3c;
-  font-weight: 300;
-  letter-spacing: 0.6rem;
-  text-transform: uppercase;
-  line-height: 3.6rem;
-  padding: 0.5rem 0;
-}
-.brand-cat-2-left .des {
-  color: #4e565d;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  padding: 0.5rem 0;
-  line-height: 2.21rem;
-}
-.brand-cat-2-right .top {
-  font-size: 2rem;
-  color: #161b3c;
-  letter-spacing: 0.6rem;
-  line-height: 1.2;
-}
-.brand-cat-2-right .center {
-  font-size: 13rem;
-  font-family: "Poppins";
-  color: #161b3c;
-  line-height: 10.8rem;
-}
-.brand-cat-2-right .bottom {
-  line-height: 1.95rem;
-  color: #7e8993;
-  font-size: 1.3rem;
-  letter-spacing: 0.2rem;
-  margin: 1rem 0;
-}
-.brand-cat-banner {
+.mob-top {
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: 80vh;
-  background-image: url("../Images/brand-categories/bg-s.jpg");
-  background-size: cover;
+  background-color: #fff;
+  z-index: 999;
 }
-.brand-cat-banner-content {
-  height: 100%;
-}
-.brand-cat-banner-content h2 {
-  color: #fff;
-  font-size: 4rem;
-  line-height: 4.8rem;
-}
-.brand-cat-banner-content h2 b {
-  font-weight: 600;
-}
-.brand-cat-banner-content h2 span {
-  font-weight: 300;
-}
-.brand-cat-banner-content .des {
-  margin: 20px 0px 10px;
-}
-.brand-cat-banner-content .des p {
-  font-weight: 500;
-  font-size: 1.3rem;
-  letter-spacing: 0.2rem;
-  line-height: 1.56rem;
-  margin-bottom: 0;
-  color: #fff;
-}
-.brand-cat-title {
-  padding: 5rem;
-  text-align: center;
-}
-.brand-cat-title h3 {
-  color: #161b3c;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 3.36rem;
-  font-size: 2.8rem;
-  margin: 1rem 0;
-}
-.brand-cat-title p {
-  color: #4e565d;
-  font-size: 1.3rem;
-  letter-spacing: 0.7rem;
-  text-transform: uppercase;
-}
-.brand-cat-team {
-  padding: 5rem 0;
-  background-image: url("../Images/service-details/team-bg.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.brand-cat-team-img {
-  position: relative;
-  border-radius: 50%;
-  overflow: hidden;
-}
-@media (max-width: 576px) {
-  .brand-cat-team-img {
-    border-radius: 20%;
-  }
-}
-.brand-cat-team-img-hover {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.mob-top-triggered {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: rgba(17, 35, 238, 0.62);
-  opacity: 0;
-  transition: 0.3s;
+  height: 7rem;
 }
-.brand-cat-team-img-hover i {
-  transition: 0.3s;
-  opacity: 0;
-  font-size: 10rem;
-  color: #cccccc;
-}
-.brand-cat-team-img:hover .brand-cat-team-img-hover {
-  opacity: 1;
-}
-.brand-cat-team-img:hover .brand-cat-team-img-hover i {
-  opacity: 1;
-}
-.brand-cat-team-content {
-  text-align: center;
-  padding: 1.5rem 0;
-}
-.brand-cat-team-content h4 {
+.mob-top-triggered .left h4 {
+  margin-bottom: 0;
+  font-size: 2.5rem;
   font-weight: 600;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.92rem;
-  font-family: "Poppins";
+  color: #ff8427;
 }
-@media (max-width: 576px) {
-  .brand-cat-team-content h4 {
-    font-size: 1.8rem;
-  }
+.mob-top-triggered .right a {
+  color: #161b3c;
+  font-size: 2rem;
 }
-.brand-cat-team-content p {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.1rem;
+.mob-menu-wrapper {
+  width: 100%;
 }
-@media (max-width: 576px) {
-  .brand-cat-team-content p {
-    font-size: 1.4rem;
-  }
+.mob-menu-content {
+  height: 100vh;
+  position: relative;
+  display: block;
+}
+.mob-menu-content:hover .mob-menu-text a {
+  color: #ff8427 !important;
+}
+.mob-menu-img {
+  height: 100%;
+}
+.mob-menu-img img {
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+.mob-menu-text {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  z-index: 90;
+}
+.mob-menu-text a {
+  font-weight: 600;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  transition: 0.3s;
+}
+.mob-menu-text p {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  color: #fff;
+  line-height: 2rem;
 }
 
-/*# sourceMappingURL=brand-categories.css.map */
+.description {
+  padding: 3.5rem 0;
+}
+.description-top {
+  padding-bottom: 2.5rem;
+}
+.description-top p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.description-menu ul {
+  list-style: none;
+}
+.description-menu ul li {
+  display: block;
+  padding: 1.8rem 0;
+  border-bottom: 0.1rem solid #edeff0;
+}
+.description-menu ul li a {
+  color: #4e565d;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-menu ul li:hover a {
+  color: #ff8427;
+}
+
+/*# sourceMappingURL=mob-header.css.map */

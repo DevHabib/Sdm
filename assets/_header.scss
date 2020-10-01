@@ -575,3 +575,11 @@ a {
     }
   }
 }
+
+.datepicker-panel {
+  overflow: hidden;
+
+  ul {
+    background-color: $color-orange;
+  }
+}

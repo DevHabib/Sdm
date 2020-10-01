@@ -1,0 +1,391 @@
+@import 'variable', 'fonts', 'mixin', 'common', 'header', 'footer';
+
+.brand-cat-title {
+  padding: 5rem;
+  text-align: center;
+
+  h3 {
+    color: $dark-blue;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-weight: $regular;
+    line-height: 3.36rem;
+    font-size: 2.8rem;
+    margin: 1rem 0;
+  }
+
+  p {
+    color: $color-dark;
+    font-size: 1.3rem;
+    letter-spacing: .7rem;
+    text-transform: uppercase;
+  }
+}
+
+#contact {
+  background-color: darken($color: $color-white, $amount: 2);
+
+  .contact {
+    &-banner {
+      background-image: url('../Images/contact/banner-1.webp');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 80vh;
+      background-color: $color-white;
+
+      &-content {
+        text-align: center;
+        padding-top: 10rem;
+
+        @include tablet-landscape {
+          text-align: left;
+          padding: 0 3rem;
+        }
+
+        @include tablet {
+          text-align: center;
+        }
+
+        h3 {
+          font-size: 4rem;
+          color: $dark-blue;
+          font-weight: $regular;
+          margin-bottom: 2rem;
+
+          b {
+            font-weight: $bold;
+          }
+        }
+
+        p {
+          font-size: 1.4rem;
+          color: $color-dark;
+        }
+      }
+    }
+
+    &-1 {
+      padding: 3rem 0;
+      background-color: darken($color: $color-white, $amount: 2);
+
+      .row {
+        row-gap: 3rem;
+      }
+
+      .top {
+        height: 30rem;
+      }
+
+      &-left {
+        background-color: $color-white;
+        padding: 3rem 0;
+
+        .top {
+          width: 75%;
+          margin: auto;
+          text-align: center;
+
+          .des {
+            text-align: center;
+
+            h3 {
+              font-size: 2.3rem;
+              font-weight: $light;
+              letter-spacing: .2rem;
+              line-height: 2.73rem;
+            }
+          }
+        }
+      }
+
+      &-right {
+        background-color: $color-white;
+        padding: 3rem 0;
+
+        .top {
+          &-content {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+
+            h3 {
+              font-size: 2.3rem;
+              font-weight: $light;
+              letter-spacing: .2rem;
+              line-height: 2.73rem;
+            }
+          }
+        }
+      }
+
+      .bottom {
+        width: 75%;
+        margin: auto;
+
+        ul {
+          margin-bottom: 5rem;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            line-height: 2.7rem;
+
+            .left {
+              width: 50%;
+
+              p {
+                margin-bottom: 0;
+                font-weight: $light;
+                letter-spacing: .2rem;
+                font-size: 1.3rem;
+                line-height: 1.56rem;
+                text-transform: uppercase;
+                color: $dark-blue;
+              }
+            }
+
+            .right {
+              width: 50%;
+              text-align: right;
+
+              p {
+                margin-bottom: 0;
+                font-weight: $light;
+                letter-spacing: .2rem;
+                font-size: 1.3rem;
+                line-height: 1.56rem;
+                text-transform: uppercase;
+                color: $color-dark;
+              }
+            }
+          }
+        }
+
+        .center-btn {
+          margin-top: 2.5rem;
+          text-align: center;
+          overflow: hidden;
+
+          button {
+            background-color: $color-orange;
+            border: .1rem solid $color-orange;
+            transition: .3s;
+            color: $color-white;
+            font-size: 1.4rem;
+            text-align: center;
+            padding: .5rem 2rem;
+            transition: .3s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+            &:focus {
+              outline: none;
+            }
+
+            &::before {
+              position: absolute;
+              content: '';
+              background-color: $color-white;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: -100%;
+              transition: .3s;
+              color: $color-orange;
+              z-index: -1;
+            }
+
+            &:hover {
+              color: $color-orange;
+
+              &::before {
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+
+      &-bottom {
+        background-color: $color-white;
+
+        &-left {
+          width: 70%;
+          margin: auto;
+        }
+
+        &-right {
+          margin-top: 7rem;
+
+          .title {
+            h3 {
+              font-weight: $light;
+              color: $dark-blue;
+              letter-spacing: .2rem;
+              line-height: 2.73rem;
+              font-size: 3.2rem;
+              text-transform: uppercase;
+              margin-bottom: 3.5rem;
+            }
+          }
+        }
+
+        &-list {
+          ul {
+            margin-bottom: 0;
+
+            li {
+              margin: 1rem 0;
+
+              p {
+                margin-bottom: 0;
+              }
+
+              .des {
+                text-align: right;
+              }
+            }
+          }
+
+          .left-btn {
+            margin-top: 2.5rem;
+            overflow: hidden;
+
+            button {
+              background-color: $color-orange;
+              border: .1rem solid $color-orange;
+              transition: .3s;
+              color: $color-white;
+              font-size: 1.4rem;
+              text-align: center;
+              padding: .5rem 2rem;
+              transition: .3s;
+              position: relative;
+              overflow: hidden;
+              z-index: 1;
+
+              &:focus {
+                outline: none;
+              }
+
+              &::before {
+                position: absolute;
+                content: '';
+                background-color: $color-white;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: -100%;
+                transition: .3s;
+                color: $color-orange;
+                z-index: -1;
+              }
+
+              &:hover {
+                color: $color-orange;
+
+                &::before {
+                  left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-2 {
+      background-image: url('../Images/contact/bg1.webp');
+      background-size: cover;
+      background-position: center;
+      @extend %section-padding;
+
+      &-right {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        &-top {
+          margin-bottom: 2rem;
+        }
+
+        &-bottom {
+          text-align: center;
+
+          p {
+            font-weight: $semi-bold;
+            text-transform: uppercase;
+            line-height: 2.4rem;
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            color: darken($color: $color-white, $amount: 20);
+            letter-spacing: .2rem;
+          }
+
+          button {
+            background-color: transparent;
+            border: .1rem solid darken($color: $color-white, $amount: 20);
+            transition: .3s;
+            color: darken($color: $color-white, $amount: 20);
+            font-size: 1.2rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            padding: .5rem 2.5rem;
+            transition: .3s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+            &:focus {
+              outline: none;
+            }
+
+            &::before {
+              position: absolute;
+              content: '';
+              background-color: $color-orange;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: -100%;
+              transition: .3s;
+              z-index: -1;
+            }
+
+            &:hover {
+              color: $color-white;
+
+              &::before {
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-3 {
+      &-wrapper {
+        width: 70%;
+        margin: auto;
+      }
+      &-top{
+        &-left{
+          h4{
+            margin-bottom: 0;
+            font-size: 1.9rem;
+            font-weight: $light;
+            letter-spacing: .3rem;
+            line-height: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}
