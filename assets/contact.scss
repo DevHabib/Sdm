@@ -247,6 +247,12 @@
             overflow: hidden;
             z-index: 1;
 
+            @include tablet {
+              font-size: 1.6rem;
+              padding: 1rem 2rem
+            }
+
+
             @include mobile {
               font-size: 1.8rem;
               padding: 1rem 2rem;
@@ -435,6 +441,10 @@
             position: relative;
             overflow: hidden;
             z-index: 1;
+            @include tablet {
+              font-size: 1.6rem;
+              padding: 1rem 2rem
+            }
 
             @include mobile {
               font-size: 1.8rem;
@@ -705,7 +715,8 @@
       &-wrapper {
         width: 70%;
         margin: auto;
-        @include mobile{
+
+        @include mobile {
           width: 100%;
         }
       }

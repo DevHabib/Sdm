@@ -585,6 +585,16 @@ a {
   border: none;
   font-size: 1.2rem;
 }
+@media (max-width: 768px) {
+  .header-top .input-group .form-control {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .header-top .input-group .form-control {
+    font-size: 1.6rem;
+  }
+}
 .header-top .input-group .form-control:focus {
   box-shadow: none;
   border: none;
@@ -606,6 +616,30 @@ a {
   color: #fff;
   font-size: 1.3rem;
   text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .header-top .header-btn {
+    height: 3rem;
+  }
+}
+@media (max-width: 992px) {
+  .header-top .header-btn {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .header-top .header-btn {
+    padding: 1.5rem 0;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .header-top .header-btn {
+    font-size: 1.8rem;
+    height: auto;
+  }
 }
 .header-top .header-btn:focus {
   border: none;
@@ -1785,6 +1819,12 @@ nav.mobile-nav img,
   overflow: hidden;
   z-index: 1;
 }
+@media (max-width: 768px) {
+  #contact .contact-1 .bottom .center-btn button {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+}
 @media (max-width: 576px) {
   #contact .contact-1 .bottom .center-btn button {
     font-size: 1.8rem;
@@ -1951,6 +1991,12 @@ nav.mobile-nav img,
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+@media (max-width: 768px) {
+  #contact .contact-2-right-bottom button {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
 }
 @media (max-width: 576px) {
   #contact .contact-2-right-bottom button {

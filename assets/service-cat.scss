@@ -1,9 +1,4 @@
-@import 'variable';
-@import 'fonts';
-@import 'mixin';
-@import 'common';
-@import 'header';
-@import 'footer';
+@import 'variable', 'fonts', 'mixin', 'common', 'header', 'footer';
 
 .service {
   position: relative;
