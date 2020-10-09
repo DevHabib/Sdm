@@ -45,3 +45,58 @@ var mySwiper = new Swiper('.swiper-container-contact', {
 		}
 	}
 });
+
+var landingTeam = new Swiper('.landing-team', {
+	speed: 400,
+	spaceBetween: 15,
+	slidesPerView: 1,
+	loop: true,
+	autoplay: true,
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	},
+});
+
+
+var videoSwiper = new Swiper('.landing-top', {
+	speed: 400,
+	spaceBetween: 0,
+	slidesPerView: 1,
+	loop: true,
+	autoplay: false,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	on: {
+		init: function () {
+			console.log('swiper initialized');
+			var currentVideo = $("[data-swiper-slide-index=" + this.realIndex + "]").find("video");
+			currentVideo.trigger('play');
+		},
+	},
+
+});
+
+var sliderVideos = $(".bg-video video");
+
+/* SWIPER API - Event will be fired after animation to other slide (next or previous) */
+videoSwiper.on('slideChange', function () {
+	console.log('slide changed');
+	/* stop all videos (currentTime buggy without this loop idea - no "real" previousIndex) */
+	sliderVideos.each(function (index) {
+		this.currentTime = 0;
+	});
+
+	/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+	var prevVideo = $("[data-swiper-slide-index=" + this.previousIndex + "]").find("video");
+	var currentVideo = $("[data-swiper-slide-index=" + this.realIndex + "]").find("video");
+	prevVideo.trigger('stop');
+	currentVideo.trigger('play');
+});
