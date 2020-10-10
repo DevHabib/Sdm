@@ -280,14 +280,18 @@ p {
 
 
 .third-section {
+  background-color: #F1F2F4;
   position: relative;
 
   .third-container {
     position: relative;
-
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     // padding-left: 131px;
     .demo-box-area-third {
-      background-color: #F1F2F4;
       padding: 10px 10px;
 
       .demo-content-relative-third {

@@ -1,3 +1,17 @@
+
+// porsche header
+$color-orange: #ff8427;
+$color-orange2: #f46a24;
+$color-dark: #4e565d;
+$color-white: #fff;
+$dark-blue: #161b3c;
+$bold: 600;
+$semi-bold: 500;
+$regular: 400;
+$light: 300;
+$primary-font: 'Poppins';
+$secondary-font: 'Oswald';
+
 %link-image {
     width: 108px;
     height: 85px;
@@ -48,7 +62,7 @@
 }
 
 %menu-item-third-level-text {
-    color: $color-dark;
+    // color: $color-dark;
     padding-left: 0;
     padding-right: 30px;
     position: relative;

@@ -1,5 +1,18 @@
 @import 'class', 'mixins', 'mixin', 'desktop';
 
+// porsche header
+$color-orange: #ff8427;
+$color-orange2: #f46a24;
+$color-dark: #4e565d;
+$color-white: #fff;
+$dark-blue: #161b3c;
+$bold: 600;
+$semi-bold: 500;
+$regular: 400;
+$light: 300;
+$primary-font: 'Poppins';
+$secondary-font: 'Oswald';
+
 .header-top {
   height: 4rem;
   margin: 0 1.5rem;
@@ -94,19 +107,6 @@
   }
 }
 
-// porsche header
-
-$color-orange: #ff8427;
-$color-orange2: #f46a24;
-$color-dark: #4e565d;
-$color-white: #fff;
-$dark-blue: #161b3c;
-$bold: 600;
-$semi-bold: 500;
-$regular: 400;
-$light: 300;
-$primary-font: 'Poppins';
-$secondary-font: 'Oswald';
 
 body {
   font-family: 14px;
