@@ -65,11 +65,19 @@ $(function () {
 
     });
 
+    $(document).on('click', '.mob-menu-content', function () {
+        $(this).children('.mob-menu-text')[0].click();
+    });
+
     $(document).on('click', '.mob-menu-text', function () {
         dataView = $(this).data().view;
-        $('.mobile-nav-third-level[data-view="' + dataView + '"]').addClass('active');
-        $('.menu-title-third-level').text(dataView);
-        $('.item-model').text(dataView);
+        if ($(this).children('a').attr('href') == '#') {
+            $('.mobile-nav-third-level[data-view="' + dataView + '"]').addClass('active');
+            $('.menu-title-third-level').text(dataView);
+            $('.item-model').text(dataView);
+        } else {
+            $(this).children('a')[0].click();
+        }
     });
 
     $(document).on('click', '.back', function () {
@@ -78,13 +86,13 @@ $(function () {
 });
 
 // Masonary Layout About Page
-$(document).ready(function(){
-    $('.pop').each(function() { // the containers for all your galleries
+$(document).ready(function () {
+    $('.pop').each(function () { // the containers for all your galleries
         $(this).magnificPopup({
             delegate: 'a', // the selector for gallery item
             type: 'image',
             gallery: {
-              enabled:true
+                enabled: true
             }
         });
     });
