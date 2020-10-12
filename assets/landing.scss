@@ -1,6 +1,32 @@
 @import 'variable', 'fonts', 'mixin', 'common', 'header', 'footer';
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px)
+  }
 
+  50% {
+    transform: translateY(10px)
+  }
+
+  100% {
+    transform: translateY(-10px)
+  }
+}
+
+@keyframes bounce-left {
+  0% {
+    transform: translateX(-10px)
+  }
+
+  50% {
+    transform: translateX(10px)
+  }
+
+  100% {
+    transform: translateX(-10px)
+  }
+}
 
 .landing {
   &-top {
@@ -49,6 +75,10 @@
   &-banner {
     position: relative;
     z-index: 9999;
+
+    @include tablet-landscape {
+      display: none;
+    }
 
     &-img {
       position: relative;
@@ -207,6 +237,10 @@
         flex-flow: column;
         justify-content: center;
 
+        @include tablet {
+          height: auto;
+        }
+
         .title {
           margin-bottom: 30px;
 
@@ -240,6 +274,7 @@
         padding: 3.5rem;
         height: 30rem;
         margin-top: 3rem;
+
 
         .title {
           h3 {
@@ -278,6 +313,12 @@
   &-members {
     background-color: #f6f6f6;
 
+    .swiper-pagination {
+      @include tablet {
+        display: none;
+      }
+    }
+
     &-bg {
       padding-top: 7rem;
       background-image: url('../Images/landing/landing-slider-bg.jpg');
@@ -289,6 +330,10 @@
 
       .team {
         &-content {
+          @include tablet {
+            text-align: center;
+          }
+
           .title {
             h3 {
               font-size: 5rem;
@@ -296,6 +341,10 @@
               text-transform: uppercase;
               font-family: $primary-font;
               font-weight: $light;
+
+              @include tablet {
+                font-size: 3.5rem;
+              }
             }
           }
 
@@ -304,6 +353,9 @@
               font-size: 1.8rem;
               color: $color-orange;
 
+              @include tablet {
+                font-size: 1.6rem;
+              }
             }
           }
         }
@@ -362,6 +414,9 @@
       &-center {
         width: 16%;
         position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
       }
     }
 
@@ -369,6 +424,10 @@
       &-left {
         left: 0;
         top: 0;
+
+        @include tablet-landscape {
+          display: none;
+        }
       }
     }
 
@@ -385,6 +444,7 @@
         transform: rotate(10deg);
         right: 0;
         bottom: 0;
+        animation-name: bounce-left;
       }
     }
 
@@ -392,11 +452,19 @@
       &-left {
         left: 0;
         bottom: 0;
+
+        @include tablet-landscape {
+          bottom: 75%;
+        }
       }
 
       &-center {
         right: 0;
         bottom: 40%;
+
+        @include tablet-landscape {
+          display: none;
+        }
       }
     }
 
@@ -414,10 +482,26 @@
       width: 15rem;
       position: absolute;
       top: -65%;
+
+      @include tablet-landscape {
+        display: none;
+      }
+    }
+
+    &-parallax {
+      @include tablet-landscape {
+        display: none;
+      }
     }
 
     &-wrapper {
       margin-top: 6rem;
+    }
+
+    &-right {
+      @include tablet-landscape {
+        display: none;
+      }
     }
 
     &-single {
@@ -495,6 +579,14 @@
         line-height: .75;
         text-transform: uppercase;
         letter-spacing: -1.5rem;
+
+        @include tablet-landscape {
+          font-size: 21rem;
+        }
+
+        @include tablet {
+          font-size: 15rem;
+        }
       }
 
       h3 {
@@ -506,6 +598,10 @@
         margin: 20px 0px 10px;
         text-align: left;
         text-transform: uppercase;
+
+        @include tablet {
+          font-size: 10rem;
+        }
       }
     }
 
@@ -514,6 +610,15 @@
         font-size: 30.2rem;
         color: $color-white;
         margin-bottom: 0;
+        text-transform: uppercase;
+
+        @include tablet-landscape {
+          font-size: 26rem;
+        }
+
+        @include tablet {
+          font-size: 10rem;
+        }
       }
     }
   }
@@ -538,6 +643,13 @@
       display: flex;
       align-items: stretch;
       justify-content: center;
+
+      @include tablet-landscape {
+        transform: none;
+        left: 0;
+        top: 0;
+        padding: 1rem 0;
+      }
 
       p {
         font-size: 1.5rem;

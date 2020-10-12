@@ -228,6 +228,7 @@ p {
 .second-section {
   margin-bottom: 20px;
   margin-top: 20px;
+  overflow: hidden;
 
   .second-container {
     width: 1140px;
@@ -246,8 +247,6 @@ p {
           position: absolute;
           top: 0px;
 
-          img {}
-
           .demo-image-content {
             position: absolute;
             top: 29%;
@@ -258,8 +257,6 @@ p {
               font-size: 55px;
               color: #1d2747;
             }
-
-            p {}
           }
 
           .demo-image-button {
@@ -290,6 +287,7 @@ p {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+
     // padding-left: 131px;
     .demo-box-area-third {
       padding: 10px 10px;
@@ -303,8 +301,6 @@ p {
           position: absolute;
           top: 0px;
           margin-left: 100px;
-
-          img {}
 
           .demo-image-content-third {
             position: absolute;
@@ -330,27 +326,11 @@ p {
           .demo-image-button {
             @extend .demo-image-button;
             color: #fff;
-
-            i {}
-
-            span {}
           }
         }
 
         .demo-content-third {
           @extend .demo-content;
-
-          .author-content {
-            .author-text {
-              h6 {}
-
-              p {}
-            }
-
-            .author-image {
-              img {}
-            }
-          }
 
           .lookbook-text {
 
@@ -527,10 +507,6 @@ p {
 .single-serveice-box-right {
   min-height: 450px;
 
-  .single-serveice-box-img {
-    img {}
-  }
-
   .single-serveice-right-content {
     position: absolute;
     top: 33%;
@@ -552,8 +528,6 @@ p {
 
   .single-serveice-box-left-content {
 
-    span {}
-
     .service_title_one {
       color: $service_two;
     }
@@ -567,16 +541,8 @@ p {
     background: $service_before_after_two;
   }
 
-  &:hover {
-    &:before {}
-  }
-
   &:after {
     background: $service_before_after_two;
-  }
-
-  &:hover {
-    &:after {}
   }
 }
 
@@ -585,8 +551,6 @@ p {
   @extend .single-serveice-box-left;
 
   .single-serveice-box-left-content {
-
-    span {}
 
     .service_title_one {
       color: $service_three;
@@ -601,16 +565,8 @@ p {
     background: $service_before_after_three;
   }
 
-  &:hover {
-    &:before {}
-  }
-
   &:after {
     background: $service_before_after_three;
-  }
-
-  &:hover {
-    &:after {}
   }
 }
 
@@ -619,9 +575,6 @@ p {
   @extend .single-serveice-box-left;
 
   .single-serveice-box-left-content {
-
-    span {}
-
     .service_title_one {
       color: $service_four;
     }
@@ -635,16 +588,8 @@ p {
     background: $service_before_after_four;
   }
 
-  &:hover {
-    &:before {}
-  }
-
   &:after {
     background: $service_before_after_four;
-  }
-
-  &:hover {
-    &:after {}
   }
 }
 

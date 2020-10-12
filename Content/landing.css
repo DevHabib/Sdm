@@ -140,7 +140,6 @@ img {
 }
 
 .menu-item-third-level-text {
-  color: #4e565d;
   padding-left: 0;
   padding-right: 30px;
   position: relative;
@@ -205,7 +204,6 @@ img {
 }
 
 .menu-item-third-level-text {
-  color: #4e565d;
   padding-left: 0;
   padding-right: 30px;
   position: relative;
@@ -1154,6 +1152,9 @@ nav.mobile-nav img,
   color: #161b3c;
   font-size: 2rem;
 }
+.footer-p3-tweets ul li .single-item .top .right {
+  position: inherit !important;
+}
 .footer-p3-tweets ul li .single-item .top .right p {
   color: #161b3c;
   font-size: 1.5rem;
@@ -1609,6 +1610,28 @@ nav.mobile-nav img,
   }
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes bounce-left {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
 .landing-top {
   z-index: 1;
   position: sticky;
@@ -1649,6 +1672,11 @@ nav.mobile-nav img,
 .landing-banner {
   position: relative;
   z-index: 9999;
+}
+@media (max-width: 992px) {
+  .landing-banner {
+    display: none;
+  }
 }
 .landing-banner-img {
   position: relative;
@@ -1781,6 +1809,11 @@ nav.mobile-nav img,
   flex-flow: column;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .landing-service .landing-service-top, .landing-service .landing-service-bottom {
+    height: auto;
+  }
+}
 .landing-service .landing-service-top .title, .landing-service .landing-service-bottom .title {
   margin-bottom: 30px;
 }
@@ -1830,6 +1863,11 @@ nav.mobile-nav img,
 .landing-members {
   background-color: #f6f6f6;
 }
+@media (max-width: 768px) {
+  .landing-members .swiper-pagination {
+    display: none;
+  }
+}
 .landing-members-bg {
   padding-top: 7rem;
   background-image: url("../Images/landing/landing-slider-bg.jpg");
@@ -1839,6 +1877,11 @@ nav.mobile-nav img,
   background-attachment: fixed;
   position: relative;
 }
+@media (max-width: 768px) {
+  .landing-members-bg .team-content {
+    text-align: center;
+  }
+}
 .landing-members-bg .team-content .title h3 {
   font-size: 5rem;
   color: #fff;
@@ -1846,9 +1889,19 @@ nav.mobile-nav img,
   font-family: "Poppins";
   font-weight: 300;
 }
+@media (max-width: 768px) {
+  .landing-members-bg .team-content .title h3 {
+    font-size: 3.5rem;
+  }
+}
 .landing-members-bg .team-content .des p {
   font-size: 1.8rem;
   color: #ff8427;
+}
+@media (max-width: 768px) {
+  .landing-members-bg .team-content .des p {
+    font-size: 1.6rem;
+  }
 }
 .landing-members .pagination {
   display: flex;
@@ -1888,10 +1941,18 @@ nav.mobile-nav img,
 .landing-floated-top-left, .landing-floated-top-right, .landing-floated-top-center, .landing-floated-bottom-left, .landing-floated-bottom-right, .landing-floated-bottom-center {
   width: 16%;
   position: absolute;
+  animation-name: bounce;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .landing-floated-top-left {
   left: 0;
   top: 0;
+}
+@media (max-width: 992px) {
+  .landing-floated-top-left {
+    display: none;
+  }
 }
 .landing-floated-top-right {
   right: 0;
@@ -1902,14 +1963,25 @@ nav.mobile-nav img,
   transform: rotate(10deg);
   right: 0;
   bottom: 0;
+  animation-name: bounce-left;
 }
 .landing-floated-bottom-left {
   left: 0;
   bottom: 0;
 }
+@media (max-width: 992px) {
+  .landing-floated-bottom-left {
+    bottom: 75%;
+  }
+}
 .landing-floated-bottom-center {
   right: 0;
   bottom: 40%;
+}
+@media (max-width: 992px) {
+  .landing-floated-bottom-center {
+    display: none;
+  }
 }
 .landing-floated-center {
   margin: auto;
@@ -1924,8 +1996,23 @@ nav.mobile-nav img,
   position: absolute;
   top: -65%;
 }
+@media (max-width: 992px) {
+  .landing-blog-floated {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .landing-blog-parallax {
+    display: none;
+  }
+}
 .landing-blog-wrapper {
   margin-top: 6rem;
+}
+@media (max-width: 992px) {
+  .landing-blog-right {
+    display: none;
+  }
 }
 .landing-blog-single {
   background-color: #fff;
@@ -1984,6 +2071,16 @@ nav.mobile-nav img,
   text-transform: uppercase;
   letter-spacing: -1.5rem;
 }
+@media (max-width: 992px) {
+  .landing-deals-left h1 {
+    font-size: 21rem;
+  }
+}
+@media (max-width: 768px) {
+  .landing-deals-left h1 {
+    font-size: 15rem;
+  }
+}
 .landing-deals-left h3 {
   color: #fff;
   font-weight: 900;
@@ -1994,10 +2091,26 @@ nav.mobile-nav img,
   text-align: left;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .landing-deals-left h3 {
+    font-size: 10rem;
+  }
+}
 .landing-deals-center h1 {
   font-size: 30.2rem;
   color: #fff;
   margin-bottom: 0;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .landing-deals-center h1 {
+    font-size: 26rem;
+  }
+}
+@media (max-width: 768px) {
+  .landing-deals-center h1 {
+    font-size: 10rem;
+  }
 }
 .landing-sales {
   padding: 4rem 0;
@@ -2018,6 +2131,14 @@ nav.mobile-nav img,
   display: flex;
   align-items: stretch;
   justify-content: center;
+}
+@media (max-width: 992px) {
+  .landing-sales .corner {
+    transform: none;
+    left: 0;
+    top: 0;
+    padding: 1rem 0;
+  }
 }
 .landing-sales .corner p {
   font-size: 1.5rem;
